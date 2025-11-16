@@ -22,7 +22,7 @@ from config import adminlist, CACHE_DURATION, CACHE_SLEEP ,file_cache, autoclean
 IS_BROADCASTING = False
 
 
-@app.on_message(filters.command("broadcast") & SUDOERS)
+@app.on_message(filters.command("Chutkibroadcast") & SUDOERS)
 @language
 async def braodcast_message(client, message:Message, _):
     global IS_BROADCASTING
